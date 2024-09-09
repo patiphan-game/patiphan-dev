@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="m-4 mt-16 flex flex-col gap-16">
+    <div className="flex max-w-5xl flex-col gap-16">
       <div className="flex flex-col items-center">
         <div className="h-[250px] w-[250px] rounded-xl bg-slate-200"></div>
       </div>
@@ -13,7 +13,9 @@ export default function Home() {
           that are fast, accessible
         </p>
       </div>
+      
       <div className="h-[2000px]"></div>
+
     </div>
   );
 }

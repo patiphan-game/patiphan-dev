@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./layout/Navbar";
+import Footer from "./layout/Footer";
 import { Quicksand, Poppins } from "next/font/google";
 
 const quicksand = Quicksand({
-  weight: "300",
+  weight: "500",
   subsets: ["latin"],
 });
 const poppins = Poppins({
-  weight: "300",
+  weight: "400",
   subsets: ["latin"],
 });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body className="">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

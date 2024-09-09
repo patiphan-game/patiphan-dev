@@ -1,14 +1,14 @@
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+  Drawer,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
 
 function Navbar() {
   return (
-    <div className="sticky top-0 z-30 backdrop-blur-xl border-b">
-      <div className="flex w-full items-center justify-between p-4">
+    <div className="sticky top-0 z-30 mx-auto max-w-7xl backdrop-blur-xl">
+      <div className="flex items-center justify-between p-4 py-5">
         <svg
           width="14"
           height="20"
@@ -51,7 +51,14 @@ function Navbar() {
             fill="white"
           />
         </svg>
-        <div className="flex items-center gap-2">
+        <div className="hidden gap-12 md:flex">
+          <a>About</a>
+          <a>Experience</a>
+          <a>Project</a>
+          <a>Activity</a>
+          <a>Contact</a>
+        </div>
+        <div className="flex items-center gap-2 md:gap-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -74,8 +81,8 @@ function Navbar() {
             <path d="m6.34 17.66-1.41 1.41" />
             <path d="m19.07 4.93-1.41 1.41" />
           </svg>
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
+          <Drawer>
+            <DrawerTrigger>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -86,21 +93,23 @@ function Navbar() {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="size-8"
+                className="size-8 md:hidden"
               >
                 <line x1="4" x2="20" y1="12" y2="12" />
                 <line x1="4" x2="20" y1="6" y2="6" />
                 <line x1="4" x2="20" y1="18" y2="18" />
               </svg>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="mr-5 mt-3 w-40 space-y-2">
-              <DropdownMenuItem>Education</DropdownMenuItem>
-              <DropdownMenuItem>Experience</DropdownMenuItem>
-              <DropdownMenuItem>Project</DropdownMenuItem>
-              <DropdownMenuItem>Activity</DropdownMenuItem>
-              <DropdownMenuItem>Contact</DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
+            </DrawerTrigger>
+            <DrawerContent>
+              <DrawerHeader className="gap-4 pt-10 text-sm">
+                <a className="font-bold">Education</a>
+                <a className="font-bold">Experience</a>
+                <a className="font-bold">Project</a>
+                <a className="font-bold">Activity</a>
+                <a className="font-bold">Contact</a>
+              </DrawerHeader>
+            </DrawerContent>
+          </Drawer>
         </div>
       </div>
     </div>
