@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
+import { ThemeProvider } from "@/components/theme-provider";
 import { Quicksand, Poppins } from "next/font/google";
 
 const quicksand = Quicksand({
@@ -26,9 +27,16 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.className}`}>
       <body className="">
-        <Navbar />
-        {children}
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
