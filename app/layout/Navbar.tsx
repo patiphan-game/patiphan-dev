@@ -73,10 +73,7 @@ function Navbar() {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="size-9 rounded-md border bg-white dark:bg-[#030712] p-2 duration-100 hover:bg-slate-100 dark:hover:bg-secondary/80 md:hidden"
-                shadow-sm
-                h-9
-                w-9
+                className="size-9 rounded-md border bg-white p-2 duration-100 hover:bg-slate-100 dark:bg-[#030712] dark:hover:bg-secondary/80 md:hidden"
               >
                 <line x1="4" x2="20" y1="12" y2="12" />
                 <line x1="4" x2="20" y1="6" y2="6" />

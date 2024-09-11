@@ -25,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.className}`}>
-      <body className="">
+    <html lang="en">
+      <body className={`${poppins.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
