@@ -140,7 +140,7 @@ function AboutSection() {
           <img className="w-[230px] rounded-xl" src="/profile-resize.jpg"></img>
         </div>
         {/* Explaining */}
-        <div className="order-1 flex flex-col gap-5 ml-2">
+        <div className="order-1 flex flex-col gap-5">
           <div className="flex items-center gap-4">
             <svg width="5%" height="1" className="hidden dark:hidden md:block">
               <line
