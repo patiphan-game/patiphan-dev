@@ -3,6 +3,8 @@ import {
   Drawer,
   DrawerContent,
   DrawerHeader,
+  DrawerTitle,
+  DrawerDescription,
   DrawerTrigger,
 } from "@/components/ui/drawer";
 
@@ -81,12 +83,16 @@ function Navbar() {
               </svg>
             </DrawerTrigger>
             <DrawerContent>
-              <DrawerHeader className="gap-4 pt-10 text-sm">
-                <a className="font-bold">Education</a>
-                <a className="font-bold">Experience</a>
-                <a className="font-bold">Project</a>
-                <a className="font-bold">Activity</a>
-                <a className="font-bold">Contact</a>
+              <DrawerHeader className="text-md gap-4 pt-10">
+                <DrawerTitle className="">
+                  What up! where you going?
+                </DrawerTitle>
+                <DrawerDescription>- - -</DrawerDescription>
+                <a className="font-semibold">Education</a>
+                <a className="font-semibold">Experience</a>
+                <a className="font-semibold">Project</a>
+                <a className="font-semibold">Activity</a>
+                <a className="font-semibold">Contact</a>
               </DrawerHeader>
             </DrawerContent>
           </Drawer>
