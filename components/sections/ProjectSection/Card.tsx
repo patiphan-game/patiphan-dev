@@ -27,7 +27,7 @@ const Card: React.FC<CardProps> = ({
   skills,
 }) => {
   return (
-    <div className="flex gap-4 rounded-xl p-3 shadow-2xl transition duration-300 hover:scale-105 dark:shadow-xl dark:shadow-slate-900">
+    <div className="flex gap-4 rounded-xl p-3 shadow-2xl transition duration-200 hover:scale-105 dark:shadow-xl dark:shadow-slate-900">
       <img src={imageSrc} className="rounded-xl" alt={title} />
       <div className="flex flex-col justify-between p-1">
         {/* Title of card */}

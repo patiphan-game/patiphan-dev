@@ -32,23 +32,23 @@ function SkillSection() {
             <div className="text-lg font-semibold dark:text-slate-100">Front-end Development</div>
             <div className="grid grid-flow-row grid-cols-3 gap-4 sm:grid-cols-2 lg:grid-flow-col">
               <div className="flex w-24 flex-col items-center gap-2">
-                <Nextjs />
+                <Nextjs className="transition-transform duration-200 hover:scale-125" />
                 <div className="dark:text-slate-300">Next.js</div>
               </div>
               <div className="flex w-24 flex-col items-center gap-2">
-                <React />
+                <React className="transition-transform duration-200 hover:scale-125" />
                 <div className="dark:text-slate-300">React</div>
               </div>
               <div className="flex w-24 flex-col items-center gap-2">
-                <Tailwind />
+                <Tailwind className="transition-transform duration-200 hover:scale-125" />
                 <div className="dark:text-slate-300">Tailwind</div>
               </div>
               <div className="flex w-24 flex-col items-center gap-2">
-                <Redux />
+                <Redux className="transition-transform duration-200 hover:scale-125" />
                 <div className="dark:text-slate-300">Redux</div>
               </div>
               <div className="flex w-24 flex-col items-center gap-2">
-                <TypeScript />
+                <TypeScript className="transition-transform duration-200 hover:scale-125" />
                 <div className="dark:text-slate-300">Typescript</div>
               </div>
             </div>
@@ -57,15 +57,15 @@ function SkillSection() {
             <div className="text-lg font-semibold dark:text-slate-100">Back-end Development</div>
             <div className="grid grid-flow-row grid-cols-3 gap-4 sm:grid-cols-2 lg:grid-flow-col">
               <div className="flex w-24 flex-col items-center gap-2">
-                <NodeJS />
+                <NodeJS className="transition-transform duration-200 hover:scale-125" />
                 <div className="dark:text-slate-300">Node.js</div>
               </div>
               <div className="flex w-24 flex-col items-center gap-2">
-                <Express />
+                <Express className="transition-transform duration-200 hover:scale-125" />
                 <div className="dark:text-slate-300">Express</div>
               </div>
               <div className="flex w-24 flex-col items-center gap-2">
-                <Golang />
+                <Golang className="transition-transform duration-200 hover:scale-125" />
                 <div className="dark:text-slate-300">Golang</div>
               </div>
             </div>
@@ -74,11 +74,11 @@ function SkillSection() {
             <div className="text-lg font-semibold dark:text-slate-100">Database</div>
             <div className="grid grid-flow-row grid-cols-2 gap-4">
               <div className="flex w-24 flex-col items-center gap-2">
-                <PostgreSQL />
+                <PostgreSQL className="transition-transform duration-200 hover:scale-125" />
                 <div className="dark:text-slate-300">PostgreSQL</div>
               </div>
               <div className="flex w-24 flex-col items-center gap-2">
-                <Firebase />
+                <Firebase className="transition-transform duration-200 hover:scale-125" />
                 <div className="dark:text-slate-300">Firebase</div>
               </div>
             </div>
@@ -87,11 +87,11 @@ function SkillSection() {
             <div className="text-lg font-semibold dark:text-slate-100">Devops & Tools</div>
             <div className="grid grid-flow-row grid-cols-2 gap-4">
               <div className="flex w-24 flex-col items-center gap-2">
-                <Docker />
+                <Docker className="transition-transform duration-200 hover:scale-125" />
                 <div className="dark:text-slate-300">Docker</div>
               </div>
               <div className="flex w-24 flex-col items-center gap-2">
-                <Git />
+                <Git className="transition-transform duration-200 hover:scale-125" />
                 <div className="dark:text-slate-300">Git</div>
               </div>
             </div>
@@ -100,11 +100,11 @@ function SkillSection() {
             <div className="text-lg font-semibold dark:text-slate-100">Problem Solving</div>
             <div className="grid grid-flow-row grid-cols-2 gap-4">
               <div className="flex w-24 flex-col items-center gap-2">
-                <Cpp />
+                <Cpp className="transition-transform duration-200 hover:scale-125" />
                 <div className="dark:text-slate-300">C++</div>
               </div>
               <div className="flex w-24 flex-col items-center gap-2">
-                <Python />
+                <Python className="transition-transform duration-200 hover:scale-125" />
                 <div className="dark:text-slate-300">Python</div>
               </div>
             </div>
