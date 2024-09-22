@@ -68,7 +68,7 @@ function ProjectSection() {
       animate={controls}
       transition={{ duration: 0.3, ease: "easeOut" }}
     >
-      <div className="mx-5 grid gap-5 md:grid-cols-2 md:gap-8 lg:mx-0">
+      <div className="mx-5 grid gap-5 lg:grid-cols-2 lg:gap-8 lg:mx-0">
         {cardData.map((data, index) => (
           <Card
             key={index}
@@ -90,9 +90,9 @@ export default ProjectSection;
 // <img src="..\demoweb\1.png" className="rounded-xl"></img>
 // <div className="my-2 ml-4 flex flex-col justify-between">
 //   {/* Title of card */}
-//   <div className="font-semibold md:text-lg">Nintendo</div>
+//   <div className="font-semibold lg:text-lg">Nintendo</div>
 //   {/* Description */}
-//   <div className="line-clamp-4 text-[14px] md:text-base">
+//   <div className="line-clamp-4 text-[14px] lg:text-base">
 //     Are you a creative professional looking to showcase your work online
 //     in a modern and professional way? Look no further! Our looking to
 //     showcase you a creative Are you a creative professional
@@ -147,7 +147,7 @@ export default ProjectSection;
 //                   strokeLinecap="round"
 //                   strokeLinejoin="round"
 //                   transform="rotate(180)"
-//                   className="hover: group rounded-md transition hover:rotate-0"
+//                   className="hover: group rounded-lg transition hover:rotate-0"
 //                 >
 //                   <path d="M15 3h6v6" />
 //                   <path d="M10 14 21 3" />
@@ -156,7 +156,7 @@ export default ProjectSection;
 //               </div>
 //             </div>
 //             {/* Modal Detail */}
-//             <p className="py-4 text-center md:text-[17px]">
+//             <p className="py-4 text-center lg:text-[17px]">
 //               Are you a creative professional looking to showcase your
 //               work online in a modern and professional way? Look no
 //               further! Our looking to showcase you a creative Are you a

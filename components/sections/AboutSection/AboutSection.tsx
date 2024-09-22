@@ -7,18 +7,16 @@ import React from "react";
 import { TextAnimate } from "./TextAnimate";
 import { motion } from "framer-motion";
 
-
-
 function AboutSection() {
   return (
     <motion.section
-    initial={{ opacity: 0, y: 50 }}
-    animate={{ opacity: 1, y:0 }}
-    transition={{ duration: 0.3, ease: "easeOut" }}
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
     >
       <div className="">
-        <div className="mx-5 mt-10 flex flex-col items-center gap-12 md:flex-row">
-          <div className="order-3 hidden md:flex md:flex-col md:items-center">
+        <div className="mx-5 mt-16 flex flex-col items-center gap-20 lg:gap-12 lg:flex-row">
+          <div className="order-3 hidden lg:flex lg:flex-col lg:items-center">
             <svg width="1" height="100%" className="mb-5 dark:hidden">
               <line
                 x1="1"
@@ -26,10 +24,10 @@ function AboutSection() {
                 x2="1"
                 y2="90%"
                 stroke="black"
-                strokeWidth="4"
+                strokeWidth="2"
               />
             </svg>
-            <svg width="1" height="50%" className="hidden dark:block">
+            <svg width="1" height="100%" className="mb-5 hidden dark:block">
               <line
                 x1="1"
                 y1="0"
@@ -37,11 +35,10 @@ function AboutSection() {
                 y2="90%"
                 stroke="white"
                 strokeWidth="2"
-                className=""
               />
             </svg>
             <div className="block">
-              <div className="dark:hidden md:flex md:flex-col md:gap-5">
+              <div className="dark:hidden lg:flex lg:flex-col lg:gap-5">
                 <a
                   href="https://www.linkedin.com/in/patiphan-arphorn/"
                   target="_blank"
@@ -90,7 +87,7 @@ function AboutSection() {
               </div>
             </div>
             <div className="hidden dark:block">
-              <div className="hidden md:flex md:flex-col md:gap-5">
+              <div className="hidden lg:flex lg:flex-col lg:gap-5">
                 <a
                   href="https://www.linkedin.com/in/patiphan-arphorn/"
                   target="_blank"
@@ -149,9 +146,9 @@ function AboutSection() {
             </div>
           </div>
           {/* picture */}
-          <div className="flex items-center justify-center md:order-2 md:flex-shrink-0">
+          <div className="flex items-center justify-center lg:order-2 lg:flex-shrink-0">
             <img
-              className="w-[230px] rounded-xl"
+              className="w-[260px] lg:w-[230px] rounded-xl"
               src="/profile-resize.jpg"
             ></img>
           </div>
@@ -161,7 +158,7 @@ function AboutSection() {
               <svg
                 width="5%"
                 height="1"
-                className="hidden dark:hidden md:block"
+                className="hidden dark:hidden lg:block"
               >
                 <line
                   x1="0"
@@ -169,31 +166,26 @@ function AboutSection() {
                   x2="100%"
                   y2="1"
                   stroke="black"
-                  strokeWidth="6"
+                  strokeWidth="2"
                 />
               </svg>
-              <svg width="5%" height="1" className="hidden md:dark:block">
+              <svg width="5%" height="1" className="hidden lg:dark:block">
                 <line
                   x1="0"
                   y1="1"
                   x2="100%"
                   y2="1"
                   stroke="white"
-                  strokeWidth="6"
+                  strokeWidth="2"
                 />
               </svg>
-              <p className="text-lg font-semibold md:text-xl">Hello World !</p>
+              <p className="text-lg font-semibold lg:text-xl">Hello World !</p>
             </div>
             <TextAnimate
               text="I'm Patiphan Arphorn"
               type="fadeInUp"
               highlight="Patiphan"
             />
-            {/* <h1 className="text-3xl font-bold md:text-4xl">
-            Im
-            <span className="text-sky-500"> Patiphan </span>
-            Arphorn
-          </h1> */}
             <p className="dark:text-slate-300">
               Im a full stack developer (React.js & Node.js) with a focus on
               creating (and occasionally designing) exceptional digital
@@ -207,7 +199,7 @@ function AboutSection() {
               </span>{" "}
               Available for exciting work.
             </p>
-            <Button className="transition duration-200 hover:scale-105 md:w-1/4">
+            <Button className="transition duration-200 hover:scale-105 lg:w-1/4">
               {" "}
               Resume{" "}
             </Button>

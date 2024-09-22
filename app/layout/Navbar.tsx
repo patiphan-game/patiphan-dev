@@ -83,7 +83,7 @@ function Navbar() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="size-9 rounded-md border bg-white p-2 duration-100 hover:bg-slate-100 dark:bg-[#030712] dark:hover:bg-secondary/80 md:hidden"
+                  className="size-9 rounded-lg border bg-white p-2 duration-100 hover:bg-slate-100 dark:bg-[#030712] dark:hover:bg-secondary/80 md:hidden"
                 >
                   <line x1="4" x2="20" y1="12" y2="12" />
                   <line x1="4" x2="20" y1="6" y2="6" />
@@ -91,7 +91,7 @@ function Navbar() {
                 </svg>
               </DrawerTrigger>
               <DrawerContent>
-                <DrawerHeader className="text-md gap-4 pt-10">
+                <DrawerHeader className="text-lg gap-4 pt-10">
                   <DrawerTitle className="">
                     What up! where you going?
                   </DrawerTitle>

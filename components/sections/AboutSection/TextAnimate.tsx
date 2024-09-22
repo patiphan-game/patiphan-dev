@@ -245,7 +245,7 @@ const TextAnimate: FC<Props> = ({
       variants={animationVariants[type].container}
       initial="hidden"
       animate={ctrls}
-      className="text-3xl font-black text-black dark:text-neutral-100 md:text-4xl"
+      className="text-3xl font-black text-black dark:text-neutral-100 lg:text-4xl"
       {...props}
     >
       {words.map((word, index) => renderWord(word, index))}
