@@ -5,7 +5,7 @@ import Footer from "./layout/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Poppins } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster"
-// import ScrollToTop from "@/components/animation/scrollToTop";
+import ScrollToTop from "@/components/animation/scrollToTop";
 
 // const quicksand = Quicksand({
 //   weight: "500",
@@ -40,7 +40,7 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
-          {/* <ScrollToTop /> */}
+          <ScrollToTop />
           <Footer />
           <Toaster />
         </ThemeProvider>

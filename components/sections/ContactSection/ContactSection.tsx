@@ -9,7 +9,7 @@ function ContactSection() {
     try {
       await navigator.clipboard.writeText(email);
       toast({
-        description: "Email copied to clipboard!",
+        description: "Email copied to clipboard !",
       });
     } catch (err) {
       console.error("Failed to copy email: ", err);
