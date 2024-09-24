@@ -11,43 +11,43 @@ function ProjectSection() {
   const { ref, controls } = useScrollAnimation();
   const cardData = [
     {
-      imageSrc: "../demoweb/1.png",
+      imageSrc: "../modal-image/1.png",
       title: "Nintendo",
       description:
         "Are you a creative professional seeking a platform to showcase your unique talents and captivate a global audience? Look no further! Our innovative online platform provides the perfect space to exhibit your work, connect with potential clients, and establish yourself as a leading authority in your field.",
-      modalImageSrc: "../modalpic/1.png",
+      modalImageSrc: "../preview-image/1.png",
       skills: ["Tailwind", "React", "Node.js"],
     },
     {
-      imageSrc: "../demoweb/2.png",
+      imageSrc: "../modal-image/2.png",
       title: "Amazon prime",
       description:
         "Do you need a visually stunning website that accurately represents your creative vision and leaves a lasting impression on visitors? Our team of skilled designers and developers specializes in crafting custom websites that not only showcase your work but also enhance your online presence and drive traffic to your digital portfolio.",
-      modalImageSrc: "../modalpic/2.png",
+      modalImageSrc: "../preview-image/2.png",
       skills: ["Tailwind", "React", "Node.js"],
     },
     {
-      imageSrc: "../demoweb/3.png",
+      imageSrc: "../modal-image/3.png",
       title: "Materail UI",
       description:
         "Are you struggling to effectively market your creative services and reach your target audience? Our comprehensive marketing solutions offer a range of strategies, including social media management, SEO optimization, and content creation, to help you increase brand awareness, generate leads, and convert prospects into paying clients.",
-      modalImageSrc: "../modalpic/2.png",
+      modalImageSrc: "../preview-image/3.png",
       skills: ["Tailwind", "React", "Node.js"],
     },
     {
-      imageSrc: "../demoweb/4.png",
+      imageSrc: "../modal-image/4.png",
       title: "Beartai",
       description:
         "Do you want to collaborate with like-minded creatives and build a supportive community of professionals? Our online platform fosters a collaborative environment where you can connect with talented individuals, share ideas, and learn from each other's experiences, helping you grow both personally and professionally.",
-      modalImageSrc: "../modalpic/2.png",
+      modalImageSrc: "../preview-image/4.png",
       skills: ["Tailwind", "React", "Node.js"],
     },
     {
-      imageSrc: "../demoweb/5.png",
+      imageSrc: "../modal-image/5.png",
       title: "Central Co",
       description:
         "Are you ready to take your creative career to the next level and achieve your professional goals? Our personalized mentorship program provides guidance, support, and industry insights to help you overcome challenges, unlock your full potential, and achieve lasting success in your creative endeavors.",
-      modalImageSrc: "../modalpic/2.png",
+      modalImageSrc: "../preview-image/5.png",
       skills: ["Tailwind", "React", "Node.js"],
     },
   ];

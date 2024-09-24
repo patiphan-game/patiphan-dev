@@ -48,27 +48,27 @@ const List = ({ item, className, index, activeItem, ...props }: ImageProps) => {
 
 const items:{ image: string; title: ReactNode }[] = [
   {
-    image: "/projectpic/4.webp",
+    image: "/project-image/wdb.webp",
 
     title: (
       <p>Skooldio, Web Development Bootcamp Batch 1 (Full scholarship)</p>
     ),
   },
   {
-    image: "/projectpic/3.webp",
+    image: "/project-image/scurve.webp",
     title: (
       <p>Digital Strategy Zero to Hero, The S Curve and former Google Asia Pacific executive</p>
     ),
   },
   {
-    image: "/projectpic/2.webp",
+    image: "/project-image/busem.webp",
     title: (
       <p>BU Mini Hackathon Top 10 in Final round, Bangkok
                 University | Busem</p>
     ),
   },
   {
-    image: "/projectpic/1.webp",
+    image: "/project-image/secg.webp",
     title: (
       <p>SECG#5 Cyber Security workshop (1 of 80), Chulalongkorn University</p>
     ),

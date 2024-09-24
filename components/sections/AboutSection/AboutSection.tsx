@@ -149,7 +149,7 @@ function AboutSection() {
           <div className="flex items-center justify-center lg:order-2 lg:flex-shrink-0">
             <img
               className="w-[260px] lg:w-[230px] rounded-xl"
-              src="/profile-resize.jpg"
+              src="/profile.webp"
             ></img>
           </div>
           {/* Explaining */}
