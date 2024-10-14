@@ -22,7 +22,7 @@ function ContactSection() {
 
   return (
     <div className="mx-5 mb-14 flex flex-col items-center gap-5 md:mb-24 lg:mx-0">
-      <div className="text-2xl font-semibold">Get In Touch</div>
+      <div className="text-2xl md:text-3xl font-semibold">Get In Touch</div>
       <div className="text-center dark:text-slate-300">
         If you are looking for a developer, have a query, or simply want to
         connect.
@@ -44,7 +44,7 @@ function ContactSection() {
           <path d="m2.357 7.714 6.98 4.654c.963.641 1.444.962 1.964 1.087a3 3 0 0 0 1.398 0c.52-.125 1.001-.446 1.963-1.087l6.98-4.654M7.158 19.5h9.686c1.68 0 2.52 0 3.162-.327a3 3 0 0 0 1.31-1.311c.328-.642.328-1.482.328-3.162V9.3c0-1.68 0-2.52-.327-3.162a3 3 0 0 0-1.311-1.311c-.642-.327-1.482-.327-3.162-.327H7.157c-1.68 0-2.52 0-3.162.327a3 3 0 0 0-1.31 1.311c-.328.642-.328 1.482-.328 3.162v5.4c0 1.68 0 2.52.327 3.162a3 3 0 0 0 1.311 1.311c.642.327 1.482.327 3.162.327" />
         </svg>
         <span>{email}</span>
-        <div onClick={copyToClipboard} className="relative cursor-pointer rounded-md p-1 dark:hover:bg-slate-700 hover:bg-slate-200 transition duration-200">
+        <div onClick={copyToClipboard} className="relative cursor-pointer rounded-md p-1 dark:hover:bg-slate-800 hover:bg-slate-100 transition duration-200">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="21"

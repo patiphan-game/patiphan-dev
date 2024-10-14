@@ -25,11 +25,14 @@ import Python from "./SvgLogo/probsolve/python.svg";
 
 function SkillSection() {
   return (
-    <div className="mt-20">
+    <div className="">
+
       <div className="text-sm lg:hidden">
         <div className="flex flex-col gap-14 sm:grid sm:grid-cols-2 sm:gap-x-0 sm:gap-y-14 lg:grid-cols-2">
           <div className="flex flex-col items-center gap-6">
-            <div className="text-lg font-semibold dark:text-slate-100">Front-end Development</div>
+            <div className="text-lg font-semibold dark:text-slate-100">
+              Front-end Development
+            </div>
             <div className="grid grid-flow-row grid-cols-3 gap-4 sm:grid-cols-2 lg:grid-flow-col">
               <div className="flex w-24 flex-col items-center gap-2">
                 <Nextjs className="transition-transform duration-200 hover:scale-125" />
@@ -54,7 +57,9 @@ function SkillSection() {
             </div>
           </div>
           <div className="flex flex-col items-center gap-6">
-            <div className="text-lg font-semibold dark:text-slate-100">Back-end Development</div>
+            <div className="text-lg font-semibold dark:text-slate-100">
+              Back-end Development
+            </div>
             <div className="grid grid-flow-row grid-cols-3 gap-4 sm:grid-cols-2 lg:grid-flow-col">
               <div className="flex w-24 flex-col items-center gap-2">
                 <NodeJS className="transition-transform duration-200 hover:scale-125" />
@@ -71,7 +76,9 @@ function SkillSection() {
             </div>
           </div>
           <div className="flex flex-col items-center gap-6">
-            <div className="text-lg font-semibold dark:text-slate-100">Database</div>
+            <div className="text-lg font-semibold dark:text-slate-100">
+              Database
+            </div>
             <div className="grid grid-flow-row grid-cols-2 gap-4">
               <div className="flex w-24 flex-col items-center gap-2">
                 <PostgreSQL className="transition-transform duration-200 hover:scale-125" />
@@ -84,7 +91,9 @@ function SkillSection() {
             </div>
           </div>
           <div className="flex flex-col items-center gap-6">
-            <div className="text-lg font-semibold dark:text-slate-100">Devops & Tools</div>
+            <div className="text-lg font-semibold dark:text-slate-100">
+              Devops & Tools
+            </div>
             <div className="grid grid-flow-row grid-cols-2 gap-4">
               <div className="flex w-24 flex-col items-center gap-2">
                 <Docker className="transition-transform duration-200 hover:scale-125" />
@@ -97,7 +106,9 @@ function SkillSection() {
             </div>
           </div>
           <div className="flex flex-col items-center gap-6">
-            <div className="text-lg font-semibold dark:text-slate-100">Problem Solving</div>
+            <div className="text-lg font-semibold dark:text-slate-100">
+              Problem Solving
+            </div>
             <div className="grid grid-flow-row grid-cols-2 gap-4">
               <div className="flex w-24 flex-col items-center gap-2">
                 <Cpp className="transition-transform duration-200 hover:scale-125" />
@@ -114,7 +125,9 @@ function SkillSection() {
       <div className="hidden text-sm lg:flex lg:flex-col">
         <div className="relative flex justify-center border-b border-slate-400 pb-6 dark:border-slate-600">
           <div className="mr-20 flex flex-col items-center gap-6">
-            <div className="text-lg font-semibold dark:text-slate-100">Front-end Development</div>
+            <div className="text-lg font-semibold dark:text-slate-100">
+              Front-end Development
+            </div>
             <div className="grid grid-cols-5 gap-4 dark:text-slate-300">
               <div className="flex w-24 flex-col items-center gap-2">
                 <Nextjs
@@ -192,7 +205,9 @@ function SkillSection() {
             </div>
           </div>
           <div className="relative flex flex-col items-center gap-6 pl-20">
-            <div className="text-lg font-semibold dark:text-slate-100">Back-end Development</div>
+            <div className="text-lg font-semibold dark:text-slate-100">
+              Back-end Development
+            </div>
             <div className="grid grid-cols-3 gap-4 dark:text-slate-300">
               <div className="flex w-24 flex-col items-center gap-2">
                 <NodeJS
@@ -221,7 +236,9 @@ function SkillSection() {
         </div>
         <div className="grid grid-cols-3 pt-6">
           <div className="flex flex-col items-center gap-6">
-            <div className="text-lg font-semibold dark:text-slate-100">Database</div>
+            <div className="text-lg font-semibold dark:text-slate-100">
+              Database
+            </div>
             <div className="grid grid-flow-row grid-cols-2 gap-4 dark:text-slate-300">
               <div className="flex w-24 flex-col items-center gap-2">
                 <PostgreSQL
@@ -240,7 +257,9 @@ function SkillSection() {
             </div>
           </div>
           <div className="relative flex flex-col items-center gap-6">
-            <div className="text-lg font-semibold  dark:text-slate-100">Devops & Tools</div>
+            <div className="text-lg font-semibold dark:text-slate-100">
+              Devops & Tools
+            </div>
             <div className="grid grid-flow-row grid-cols-2 gap-4 dark:text-slate-300">
               <div className="flex w-24 flex-col items-center gap-2">
                 <Docker
@@ -260,7 +279,9 @@ function SkillSection() {
             </div>
           </div>
           <div className="relative flex flex-col items-center gap-6">
-            <div className="text-lg font-semibold dark:text-slate-100">Problem Solving</div>
+            <div className="text-lg font-semibold dark:text-slate-100">
+              Problem Solving
+            </div>
             <div className="grid grid-flow-row grid-cols-2 gap-4 dark:text-slate-300">
               <div className="flex w-24 flex-col items-center gap-2">
                 <Cpp

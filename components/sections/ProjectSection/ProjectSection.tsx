@@ -58,17 +58,27 @@ function ProjectSection() {
       animate={controls}
       transition={{ duration: 0.3, ease: "easeOut" }}
     >
-      <div className="mx-5 grid gap-5 lg:grid-cols-2 lg:gap-8 lg:mx-0">
-        {cardData.map((data, index) => (
-          <Card
-            key={index}
-            imageSrc={data.imageSrc}
-            title={data.title}
-            description={data.description}
-            modalImageSrc={data.modalImageSrc}
-            skills={data.skills}
-          />
-        ))}
+      <div>
+        <div className="flex mx-5 flex-col ">
+          <h2 className="mb-2 rounded-xl text-2xl font-semibold md:text-3xl">
+           Projects Portfolio
+          </h2>
+          <p className="mb-8 md:mb-10  text-sm md:text-base">
+          <span className="text-xl text-sky-500">●</span> A collection of projects I’ve worked on, highlighting features, and technologies used.
+          </p>
+        </div>
+        <div className="mx-5 grid gap-5 lg:mx-0 lg:grid-cols-2 lg:gap-8">
+          {cardData.map((data, index) => (
+            <Card
+              key={index}
+              imageSrc={data.imageSrc}
+              title={data.title}
+              description={data.description}
+              modalImageSrc={data.modalImageSrc}
+              skills={data.skills}
+            />
+          ))}
+        </div>
       </div>
     </motion.section>
   );
