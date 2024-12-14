@@ -1,8 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer base {
 
+.section {
+  padding-top: 100px; /* Adjust this value based on the height of your fixed header */
+  margin-top: -100px; /* Same value as padding-top */
+}
+
+.active {
+  @apply text-blue-500 underline decoration-2 underline-offset-8;
+}
+
+@layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 223 84% 5%;

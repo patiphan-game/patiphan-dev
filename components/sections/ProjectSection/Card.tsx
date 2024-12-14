@@ -17,6 +17,7 @@ interface CardProps {
   description: string;
   modalImageSrc: string;
   skills: string[];
+  url: string;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -25,10 +26,15 @@ const Card: React.FC<CardProps> = ({
   description,
   modalImageSrc,
   skills,
+  url,
 }) => {
   return (
     <div className="flex gap-4 rounded-xl p-3 shadow-2xl transition duration-200 hover:scale-105 dark:shadow-xl dark:shadow-slate-900">
-      <img src={imageSrc} className="rounded-xl" alt={title} />
+      <img
+        src={imageSrc}
+        className="h-[170px] w-[128px] rounded-xl"
+        alt={title}
+      />
       <div className="flex flex-col justify-between p-1">
         {/* Title of card */}
         <div className="font-semibold md:text-lg">{title}</div>
@@ -75,7 +81,7 @@ const Card: React.FC<CardProps> = ({
               </div>
             </Button>
           </DialogTrigger>
-          <DialogContent>
+          <DialogContent className="max-h-[550px] overflow-y-auto sm:max-h-none sm:overflow-auto">
             <DialogHeader>
               <DialogTitle></DialogTitle>
               <DialogDescription asChild>
@@ -83,40 +89,59 @@ const Card: React.FC<CardProps> = ({
                   <div className="m-2 overflow-hidden rounded-3xl shadow-2xl dark:shadow-xl dark:shadow-slate-800">
                     <img
                       src={modalImageSrc}
-                      className="rounded-3xl transition duration-300 ease-in-out hover:scale-105"
+                      className="rounded-3xl transition duration-300 ease-in-out hover:scale-105 sm:h-[310px] sm:w-[390px]"
                       alt={title}
                     />
                   </div>
                   <div className="mt-2 flex items-center gap-5">
-                    <p className="text-xl font-extrabold transition duration-200 hover:scale-110 md:text-2xl">
-                      {title}
-                    </p>
-                    <svg
-                      width="30"
-                      height="30"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      transform="rotate(180)"
-                      className="hover: group transition hover:rotate-0"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <a
+                      href={url}
+                      rel="noopener noreferrer"
+                      title={title}
+                      target="blank"
                     >
-                      <path d="M21 3h-6.75M21 3v6.75M21 3l-8.25 8.25M9.4 3c-2.24 0-3.36 0-4.216.436a4 4 0 0 0-1.748 1.748C3 6.04 3 7.16 3 9.4v5.2c0 2.24 0 3.36.436 4.216a4 4 0 0 0 1.748 1.748C6.04 21 7.16 21 9.4 21h5.2c2.24 0 3.36 0 4.216-.436a4 4 0 0 0 1.748-1.748C21 17.96 21 16.84 21 14.6v-1.1" />
-                    </svg>
+                      {" "}
+                      <p className="text-xl font-extrabold transition duration-200 hover:scale-110 md:text-2xl">
+                        {title}
+                      </p>
+                    </a>
+                    <a
+                      href={url}
+                      rel="noopener noreferrer"
+                      title={title}
+                      target="blank"
+                    >
+                      <svg
+                        width="30"
+                        height="30"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        transform="rotate(180)"
+                        className="hover: group transition hover:rotate-0"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M21 3h-6.75M21 3v6.75M21 3l-8.25 8.25M9.4 3c-2.24 0-3.36 0-4.216.436a4 4 0 0 0-1.748 1.748C3 6.04 3 7.16 3 9.4v5.2c0 2.24 0 3.36.436 4.216a4 4 0 0 0 1.748 1.748C6.04 21 7.16 21 9.4 21h5.2c2.24 0 3.36 0 4.216-.436a4 4 0 0 0 1.748-1.748C21 17.96 21 16.84 21 14.6v-1.1" />
+                      </svg>
+                    </a>
                   </div>
                   {/* Modal Detail */}
                   <p className="py-4 text-center dark:text-slate-300 md:text-base">
                     {description}
                   </p>
-                  <div className="flex gap-7">
+                  <div
+                    className={`grid gap-6 ${
+                      skills.length === 3 ? "grid-cols-3" : "grid-cols-2"
+                    } md:flex`}
+                  >
                     {/* Skill Section */}
                     {skills.map((skill, index) => (
                       <div
                         key={index}
-                        className="rounded-xl bg-black p-2 text-white dark:bg-white dark:text-black"
+                        className="rounded-xl bg-black p-2 px-3 text-white dark:bg-white dark:font-semibold dark:text-black"
                       >
                         {skill}
                       </div>

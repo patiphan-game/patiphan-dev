@@ -6,49 +6,37 @@ import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/components/animation/useScrollAnimation";
 
 import Card from "./Card";
+import { TextAnimate } from "@/components/animation/textAnimation";
 
 function ProjectSection() {
   const { ref, controls } = useScrollAnimation();
   const cardData = [
     {
-      imageSrc: "../modal-image/1.png",
-      title: "Nintendo",
+      imageSrc: "../modal-image/1.webp",
+      title: "WBD Clothing Co.",
       description:
-        "Are you a creative professional seeking a platform to showcase your unique talents and captivate a global audience? Look no further! Our innovative online platform provides the perfect space to exhibit your work, connect with potential clients, and establish yourself as a leading authority in your field.",
-      modalImageSrc: "../preview-image/1.png",
-      skills: ["Tailwind", "React", "Node.js"],
+        "In this project, I gained collaborative web development experience focusing on React.js, utilizing Vite for prototyping. My primary responsibility was on the product detail page, managing API interactions and implementing dynamic data display with state management. Tailwind CSS facilitated responsive styling, Using postman for API testing, and deployment was achieved through Vercel.",
+      modalImageSrc: "../preview-image/1.webp",
+      skills: ["React", "Tailwind", "daisyUI"],
+      url: "https://wdb-project.vercel.app/",
     },
     {
-      imageSrc: "../modal-image/2.png",
-      title: "Amazon prime",
+      imageSrc: "../modal-image/3.webp",
+      title: "Patiphan.dev",
       description:
-        "Do you need a visually stunning website that accurately represents your creative vision and leaves a lasting impression on visitors? Our team of skilled designers and developers specializes in crafting custom websites that not only showcase your work but also enhance your online presence and drive traffic to your digital portfolio.",
-      modalImageSrc: "../preview-image/2.png",
-      skills: ["Tailwind", "React", "Node.js"],
+        "This is my portfolio website demonstrates my expertise in front-end development, utilizing Next.js and ShadCN for seamless design and efficient styling. The site is built to be fully responsive, providing an optimal user experience across all devices, from mobile phones to desktops. It features a clean and intuitive interface, enhanced by smooth animations and modern UI components, ensuring accessibility and ease of navigation. ",
+      modalImageSrc: "../preview-image/3.webp",
+      skills: ["Next.js", "Typescript", "ShadCN", "Framer.js"],
+      url: " ",
     },
     {
-      imageSrc: "../modal-image/3.png",
-      title: "Materail UI",
+      imageSrc: "../modal-image/2.webp",
+      title: "BeWell Buddies",
       description:
-        "Are you struggling to effectively market your creative services and reach your target audience? Our comprehensive marketing solutions offer a range of strategies, including social media management, SEO optimization, and content creation, to help you increase brand awareness, generate leads, and convert prospects into paying clients.",
-      modalImageSrc: "../preview-image/3.png",
-      skills: ["Tailwind", "React", "Node.js"],
-    },
-    {
-      imageSrc: "../modal-image/4.png",
-      title: "Beartai",
-      description:
-        "Do you want to collaborate with like-minded creatives and build a supportive community of professionals? Our online platform fosters a collaborative environment where you can connect with talented individuals, share ideas, and learn from each other's experiences, helping you grow both personally and professionally.",
-      modalImageSrc: "../preview-image/4.png",
-      skills: ["Tailwind", "React", "Node.js"],
-    },
-    {
-      imageSrc: "../modal-image/5.png",
-      title: "Central Co",
-      description:
-        "Are you ready to take your creative career to the next level and achieve your professional goals? Our personalized mentorship program provides guidance, support, and industry insights to help you overcome challenges, unlock your full potential, and achieve lasting success in your creative endeavors.",
-      modalImageSrc: "../preview-image/5.png",
-      skills: ["Tailwind", "React", "Node.js"],
+        "Bewell Buddy is a health improvement web app built with React and Firebase, Firebase is extensively integrated for user authentication, registration, and secure management of user data.Error handling is implemented for password validation during registration and login to ensure robust security. Additionally, user weight data is visualized using Chart.js, providing clear graphical representation of progress over time. Although the app isn't fully responsive yet, the core functionality is in place and optimized for desktop usage",
+      modalImageSrc: "../preview-image/2.webp",
+      skills: ["React","Firebase", "Tailwind", "daisyUI"],
+      url: "https://bewell-buddies.vercel.app/",
     },
   ];
   return (
@@ -58,16 +46,16 @@ function ProjectSection() {
       animate={controls}
       transition={{ duration: 0.3, ease: "easeOut" }}
     >
-      <div>
-        <div className="flex mx-5 flex-col ">
-          <h2 className="mb-2 rounded-xl text-2xl font-semibold md:text-3xl">
-           Projects Portfolio
-          </h2>
-          <p className="mb-8 md:mb-10  text-sm md:text-base">
-          <span className="text-xl text-sky-500">●</span> A collection of projects I’ve worked on, highlighting features, and technologies used.
+      <div className="mx-5 lg:mx-0">
+        <div className="mx-5 flex flex-col md:mx-0">
+          <TextAnimate text="Projects Portfolio" type="fadeIn" />
+          <p className="mb-8 text-sm md:mb-10 md:text-base">
+            <span className="text-xl text-sky-500">●</span> A collection of
+            projects I’ve worked on, highlighting features, and technologies
+            used.
           </p>
         </div>
-        <div className="mx-5 grid gap-5 lg:mx-0 lg:grid-cols-2 lg:gap-8">
+        <div className="grid gap-5 lg:mx-0 lg:grid-cols-2 lg:gap-8">
           {cardData.map((data, index) => (
             <Card
               key={index}
@@ -76,6 +64,7 @@ function ProjectSection() {
               description={data.description}
               modalImageSrc={data.modalImageSrc}
               skills={data.skills}
+              url={data.url}
             />
           ))}
         </div>

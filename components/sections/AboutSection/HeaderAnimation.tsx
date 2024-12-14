@@ -190,7 +190,7 @@ const animationVariants = {
   },
 }
 
-const TextAnimate: FC<Props> = ({
+const HeaderAnimate: FC<Props> = ({
   text,
   type = "whipInUp",
   highlight,
@@ -253,4 +253,4 @@ const TextAnimate: FC<Props> = ({
   );
 };
 
-export { TextAnimate };
+export { HeaderAnimate };

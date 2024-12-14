@@ -13,14 +13,24 @@ export default function Home() {
     window.scrollTo(0, 0); // Scroll to the top on page load
   }, []);
   return (
-    <div className="mx-auto flex flex-col gap-24 md:gap-32 sm:max-w-2xl lg:max-w-5xl">
-      <AboutSection />
+    <div className="mx-auto flex flex-col gap-24 sm:max-w-2xl md:gap-32 lg:max-w-5xl">
+      <section id="about" className="section">
+        <AboutSection />
+      </section>
       <SkillSection />
-      <EducationSection />
-      <ExperienceSection />
-      <ProjectSection />
-      <ActivitySection />
-      <ContactSection />
+        <EducationSection />
+      <section id="experience" className="section">
+        <ExperienceSection />
+      </section>
+      <section id="project" className="section">
+        <ProjectSection />
+      </section>
+      <section id="activity" className="section">
+        <ActivitySection />
+      </section>
+      <section id="contact">
+        <ContactSection />
+      </section>
     </div>
   );
 }

@@ -1,20 +1,31 @@
-import Expandable from '@/components/ui/expandable'
-import React from 'react'
+import Expandable from "@/components/ui/expandable";
+import React from "react";
+import { motion } from "framer-motion";
+import { useScrollAnimation } from "@/components/animation/useScrollAnimation";
+import { TextAnimate } from "@/components/animation/textAnimation";
 
 function ActivitySection() {
+  const { ref, controls } = useScrollAnimation();
   return (
-    <div className='mx-5 lg:mx-0'>
-        <div className="flex mx-5 md:mx-0 flex-col ">
-          <h2 className="mb-2 rounded-xl text-2xl font-semibold md:text-3xl">
-          Extracurriculars
-          </h2>
-          <p className="mb-8 md:mb-10  text-sm md:text-base">
-          <span className="text-xl text-sky-500">●</span> My involvement in activities outside of work, including events, volunteering, or contributions to the tech community.
+    <motion.section
+      ref={ref}
+      initial={{ opacity: 0, y: 75 }}
+      animate={controls}
+      transition={{ duration: 0.3, ease: "easeOut" }}
+    >
+      <div className="mx-5 lg:mx-0">
+        <div className="mx-5 flex flex-col md:mx-0">
+        <TextAnimate text="Extracurriculars" type="fadeIn" />
+          <p className="mb-8 text-sm md:mb-10 md:text-base">
+            <span className="text-xl text-sky-500">●</span> My involvement in
+            activities outside of work, including events, volunteering, or
+            contributions to the tech community.
           </p>
         </div>
-      <Expandable className="flex w-full min-w-72 storybook-fix dark:shadow-slate-700 dark:shadow-xl" />
-    </div>
-  )
+        <Expandable className="storybook-fix flex w-full min-w-72 dark:shadow-xl dark:shadow-slate-700" />
+      </div>
+    </motion.section>
+  );
 }
 
-export default ActivitySection
+export default ActivitySection;
