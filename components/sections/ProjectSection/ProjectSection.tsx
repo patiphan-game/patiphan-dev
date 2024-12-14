@@ -12,29 +12,29 @@ function ProjectSection() {
   const { ref, controls } = useScrollAnimation();
   const cardData = [
     {
-      imageSrc: "../modal-image/1.webp",
+      imageSrc: "../modal-image/wdb.webp",
       title: "WBD Clothing Co.",
       description:
         "In this project, I gained collaborative web development experience focusing on React.js, utilizing Vite for prototyping. My primary responsibility was on the product detail page, managing API interactions and implementing dynamic data display with state management. Tailwind CSS facilitated responsive styling, Using postman for API testing, and deployment was achieved through Vercel.",
-      modalImageSrc: "../preview-image/1.webp",
+      modalImageSrc: "../preview-image/wdb.webp",
       skills: ["React", "Tailwind", "daisyUI"],
       url: "https://wdb-project.vercel.app/",
     },
     {
-      imageSrc: "../modal-image/3.webp",
+      imageSrc: "../modal-image/patiphan-dev.webp",
       title: "Patiphan.dev",
       description:
         "This is my portfolio website demonstrates my expertise in front-end development, utilizing Next.js and ShadCN for seamless design and efficient styling. The site is built to be fully responsive, providing an optimal user experience across all devices, from mobile phones to desktops. It features a clean and intuitive interface, enhanced by smooth animations and modern UI components, ensuring accessibility and ease of navigation. ",
-      modalImageSrc: "../preview-image/3.webp",
+      modalImageSrc: "../preview-image/patiphan-dev.webp",
       skills: ["Next.js", "Typescript", "ShadCN", "Framer.js"],
       url: " ",
     },
     {
-      imageSrc: "../modal-image/2.webp",
+      imageSrc: "../modal-image/bewell.webp",
       title: "BeWell Buddies",
       description:
         "Bewell Buddy is a health improvement web app built with React and Firebase, Firebase is extensively integrated for user authentication, registration, and secure management of user data.Error handling is implemented for password validation during registration and login to ensure robust security. Additionally, user weight data is visualized using Chart.js, providing clear graphical representation of progress over time. Although the app isn't fully responsive yet, the core functionality is in place and optimized for desktop usage",
-      modalImageSrc: "../preview-image/2.webp",
+      modalImageSrc: "../preview-image/bewell.webp",
       skills: ["React","Firebase", "Tailwind", "daisyUI"],
       url: "https://bewell-buddies.vercel.app/",
     },
