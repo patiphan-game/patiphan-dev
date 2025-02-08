@@ -201,7 +201,7 @@ function AboutSection() {
               Seeking for exciting work.
             </p>
             <a
-              href="/Patiphan_Arphorn_Resume.pdf"
+              href="/Patiphan Arphorn - Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

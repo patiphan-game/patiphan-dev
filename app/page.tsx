@@ -10,7 +10,9 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top on page load
+    setTimeout(() => {
+      window.scrollTo(0, 0); // Scroll to the top on page load
+    }, 100); // Delay of 100ms
   }, []);
   return (
     <div className="mx-auto flex flex-col gap-24 sm:max-w-2xl md:gap-32 lg:max-w-5xl">

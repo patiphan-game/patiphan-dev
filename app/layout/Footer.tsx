@@ -15,7 +15,7 @@ function Footer() {
       <div className="mx-auto max-w-7xl">
         <div className="mx-2 flex items-center justify-center border-t p-4 py-[22px] md:justify-between">
           <p className="font-semibold dark:text-slate-100">
-            © 2024 coded with 🔥 by Patiphan
+            © 2025 coded with 🔥 by Patiphan
           </p>
           <div className="block">
             <div className="hidden md:flex md:gap-5">
