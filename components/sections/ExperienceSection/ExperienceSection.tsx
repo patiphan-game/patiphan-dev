@@ -1,4 +1,4 @@
-import { CalendarDays, MapPin, GraduationCap, Briefcase } from "lucide-react";
+import { CalendarDays, MapPin, Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/components/animation/useScrollAnimation";
 import { TextAnimate } from "@/components/animation/textAnimation";
