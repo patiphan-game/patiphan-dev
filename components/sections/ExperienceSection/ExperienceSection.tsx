@@ -40,7 +40,7 @@ const experiences = [
   },
 ];
 
-function EducationSection() {
+function ExperienceSection() {
   const { ref, controls } = useScrollAnimation();
   return (
     <motion.section
@@ -86,7 +86,7 @@ function EducationSection() {
                   </div>
 
                   {/* Card */}
-                  <div className="order-1 w-full rounded-lg bg-white px-6 py-5 shadow-md hover:shadow-lg transition dark:bg-[#030711] dark:shadow-xl dark:shadow-slate-900">
+                  <div className="order-1 w-full rounded-lg bg-white px-6 py-5 shadow-md transition hover:shadow-lg dark:bg-[#030711] dark:shadow-xl dark:shadow-slate-900">
                     <h3 className="mb-1 text-xl font-bold text-gray-800 dark:text-white">
                       {exp.title}
                     </h3>
@@ -149,4 +149,4 @@ function EducationSection() {
     </motion.section>
   );
 }
-export default EducationSection;
+export default ExperienceSection;
