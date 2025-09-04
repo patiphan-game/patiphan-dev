@@ -16,9 +16,8 @@ interface ExpandableProps {
 }
 
 const List = ({ item, className, index, activeItem, ...props }: ImageProps) => {
-  const altText = typeof item.title === "string" 
-  ? item.title 
-  : `Image ${index + 1}`;
+  const altText =
+    typeof item.title === "string" ? item.title : `Image ${index + 1}`;
   return (
     <div
       className={cn(
@@ -38,7 +37,7 @@ const List = ({ item, className, index, activeItem, ...props }: ImageProps) => {
         })}
       />
       {index === activeItem && (
-        <div className="absolute text-sm sm:text-base bottom-4 font-semibold left-4 mr-3 min-w-fit rounded-md bg-white bg-opacity-60 px-2 py-2 text-black md:bottom-8 md:left-8">
+        <div className="absolute bottom-4 left-4 mr-3 min-w-fit rounded-md bg-white bg-opacity-60 px-2 py-2 text-sm font-semibold text-black sm:text-base md:bottom-8 md:left-8">
           {item.title}
         </div>
       )}
@@ -46,31 +45,36 @@ const List = ({ item, className, index, activeItem, ...props }: ImageProps) => {
   );
 };
 
-const items:{ image: string; title: ReactNode }[] = [
+const items: { image: string; title: ReactNode }[] = [
+  {
+    image: "/project-image/hackathon.jpg",
+
+    title: <p>Skooldio Hackathon, Winner 1st Place (2025)</p>,
+  },
   {
     image: "/project-image/wdb.webp",
 
-    title: (
-      <p>Skooldio, Web Development Bootcamp Batch 1 (Full scholarship)</p>
-    ),
+    title: <p>Skooldio, Web Development Bootcamp Batch 1 (Full scholarship) (2024)</p>,
   },
   {
     image: "/project-image/scurve.webp",
     title: (
-      <p>Digital Strategy Zero to Hero, The S Curve and former Google Asia Pacific executive</p>
+      <p>
+        Digital Strategy Zero to Hero, Former Google Asia
+        Pacific executive (2023)
+      </p>
     ),
   },
   {
     image: "/project-image/busem.webp",
     title: (
-      <p>BU Mini Hackathon Top 10 in Final round, Bangkok
-                University | Busem</p>
+      <p>BU Mini Hackathon Top 10 in Final round, Bangkok University | Busem (2023)</p>
     ),
   },
   {
     image: "/project-image/secg.webp",
     title: (
-      <p>SECG#5 Cyber Security workshop (1 of 80), Chulalongkorn University</p>
+      <p>SECG#5 Cyber Security workshop 1 of 80, Chulalongkorn University (2022)</p>
     ),
   },
 ];
