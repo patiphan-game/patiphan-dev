@@ -29,7 +29,7 @@ const Card: React.FC<CardProps> = ({
   url,
 }) => {
   return (
-    <div className="flex gap-4 rounded-xl p-3 shadow-2xl transition duration-200 hover:scale-105 dark:shadow-xl dark:shadow-slate-900">
+    <div className="flex gap-4 rounded-xl p-3 shadow-lg hover:shadow-xl transition duration-200 hover:scale-105 dark:shadow-xl dark:shadow-slate-900">
       <img
         src={imageSrc}
         className="h-[170px] w-[128px] rounded-xl"

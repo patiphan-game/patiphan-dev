@@ -2,7 +2,7 @@
 import AboutSection from "@/components/sections/AboutSection/AboutSection";
 import ActivitySection from "@/components/sections/ActivitySection/ActivitySection";
 import ContactSection from "@/components/sections/ContactSection/ContactSection";
-import EducationSection from "@/components/sections/EducationSection/EducationSection";
+import EducationSection from "@/components/sections/ExperienceSection/ExperienceSection";
 import ExperienceSection from "@/components/sections/ExperienceSection/ExperienceSection";
 import ProjectSection from "@/components/sections/ProjectSection/ProjectSection";
 import SkillSection from "@/components/sections/SkillSection/SkillSection";
@@ -20,7 +20,6 @@ export default function Home() {
         <AboutSection />
       </section>
       <SkillSection />
-        <EducationSection />
       <section id="experience" className="section">
         <ExperienceSection />
       </section>
