@@ -15,11 +15,11 @@ function ActivitySection() {
     >
       <div className="mx-5 lg:mx-0">
         <div className="mx-5 flex flex-col md:mx-0">
-        <TextAnimate text="Extracurriculars" type="fadeIn" />
+          <TextAnimate text="Extracurriculars" type="fadeIn" />
           <p className="mb-8 text-sm md:mb-10 md:text-base">
-            <span className="text-xl text-sky-500">●</span> My involvement in
-            activities outside of work, including events, volunteering, or
-            contributions to the tech community.
+            <span className="text-xl text-sky-500">●</span> My activities beyond
+            work, including hackathons, events, and contributions to the tech
+            community.
           </p>
         </div>
         <Expandable className="storybook-fix flex w-full min-w-72 dark:shadow-xl dark:shadow-slate-700" />

@@ -54,7 +54,7 @@ function EducationSection() {
           <TextAnimate text="Professional Experience" type="fadeIn" />
           <p className="mb-8 text-sm md:mb-10 md:text-base">
             <span className="text-xl text-sky-500">●</span> A summary of my
-            professional roles and the impact I’ve made.
+            professional roles and the things I’ve made.
           </p>
         </div>
         <section className="w-full">
