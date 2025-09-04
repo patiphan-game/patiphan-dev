@@ -1,15 +1,14 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import path from "path";
+// Frontend Logos
 import Nextjs from "./SvgLogo/frontend/nextjs.svg";
 import React from "./SvgLogo/frontend/react.svg";
 import Tailwind from "./SvgLogo/frontend/tailwind.svg";
-import Redux from "./SvgLogo/frontend/redux.svg";
 import TypeScript from "./SvgLogo/frontend/typescript.svg";
 
 // Backend Logos
-import NodeJS from "./SvgLogo/backend/nodejs.svg";
 import Express from "./SvgLogo/backend/express.svg";
+import NestJS from "./SvgLogo/backend/nestjs.svg";
 import Golang from "./SvgLogo/backend/golang.svg";
+import GraphQL from "./SvgLogo/backend/graphql.svg";
 
 // Database Logos
 import PostgreSQL from "./SvgLogo/database/postgresql.svg";
@@ -30,16 +29,17 @@ function SkillSection() {
     <motion.section
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, ease: "easeOut" , delay: 0.1}}
+      transition={{ duration: 0.4, ease: "easeOut", delay: 0.1 }}
     >
       <div className="">
+        {/* Mobile & Tablet */}
         <div className="text-sm lg:hidden">
           <div className="flex flex-col gap-14 sm:grid sm:grid-cols-2 sm:gap-x-0 sm:gap-y-14 lg:grid-cols-2">
             <div className="flex flex-col items-center gap-6">
               <div className="text-lg font-semibold dark:text-slate-100">
                 Front-end Development
               </div>
-              <div className="grid grid-flow-row grid-cols-3 gap-4 sm:grid-cols-2 lg:grid-flow-col">
+              <div className="grid grid-flow-row grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-flow-col">
                 <div className="flex w-24 flex-col items-center gap-2">
                   <Nextjs className="transition-transform duration-200 hover:scale-125" />
                   <div className="dark:text-slate-300">Next.js</div>
@@ -53,10 +53,6 @@ function SkillSection() {
                   <div className="dark:text-slate-300">Tailwind</div>
                 </div>
                 <div className="flex w-24 flex-col items-center gap-2">
-                  <Redux className="transition-transform duration-200 hover:scale-125" />
-                  <div className="dark:text-slate-300">Redux</div>
-                </div>
-                <div className="flex w-24 flex-col items-center gap-2">
                   <TypeScript className="transition-transform duration-200 hover:scale-125" />
                   <div className="dark:text-slate-300">Typescript</div>
                 </div>
@@ -66,10 +62,10 @@ function SkillSection() {
               <div className="text-lg font-semibold dark:text-slate-100">
                 Back-end Development
               </div>
-              <div className="grid grid-flow-row grid-cols-3 gap-4 sm:grid-cols-2 lg:grid-flow-col">
+              <div className="grid grid-flow-row grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-flow-col">
                 <div className="flex w-24 flex-col items-center gap-2">
-                  <NodeJS className="transition-transform duration-200 hover:scale-125" />
-                  <div className="dark:text-slate-300">Node.js</div>
+                  <NestJS className="transition-transform duration-200 hover:scale-125" />
+                  <div className="dark:text-slate-300">NestJS</div>
                 </div>
                 <div className="flex w-24 flex-col items-center gap-2">
                   <Express className="transition-transform duration-200 hover:scale-125" />
@@ -78,6 +74,10 @@ function SkillSection() {
                 <div className="flex w-24 flex-col items-center gap-2">
                   <Golang className="transition-transform duration-200 hover:scale-125" />
                   <div className="dark:text-slate-300">Golang</div>
+                </div>
+                <div className="flex w-24 flex-col items-center gap-2">
+                  <GraphQL className="transition-transform duration-200 hover:scale-125" />
+                  <div className="dark:text-slate-300">GraphQL</div>
                 </div>
               </div>
             </div>
@@ -128,13 +128,13 @@ function SkillSection() {
             </div>
           </div>
         </div>
-        <div className="hidden lg:mx-0 text-sm lg:flex lg:flex-col">
+        <div className="hidden text-sm lg:mx-0 lg:flex lg:flex-col">
           <div className="relative flex justify-center border-b border-slate-400 pb-6 dark:border-slate-600">
             <div className="mr-20 flex flex-col items-center gap-6">
               <div className="text-lg font-semibold dark:text-slate-100">
                 Front-end Development
               </div>
-              <div className="grid grid-cols-5 gap-4 dark:text-slate-300">
+              <div className="grid grid-cols-4 gap-4 dark:text-slate-300">
                 <div className="flex w-24 flex-col items-center gap-2">
                   <Nextjs
                     style={{ width: "45px", height: "45px" }}
@@ -195,13 +195,6 @@ function SkillSection() {
                   <div>Tailwind</div>
                 </div>
                 <div className="flex w-24 flex-col items-center gap-2">
-                  <Redux
-                    style={{ width: "45px", height: "45px" }}
-                    className="transition-transform duration-200 hover:scale-125"
-                  />
-                  <div>Redux</div>
-                </div>
-                <div className="flex w-24 flex-col items-center gap-2">
                   <TypeScript
                     style={{ width: "45px", height: "45px" }}
                     className="transition-transform duration-200 hover:scale-125"
@@ -214,13 +207,13 @@ function SkillSection() {
               <div className="text-lg font-semibold dark:text-slate-100">
                 Back-end Development
               </div>
-              <div className="grid grid-cols-3 gap-4 dark:text-slate-300">
+              <div className="grid grid-cols-4 gap-4 dark:text-slate-300">
                 <div className="flex w-24 flex-col items-center gap-2">
-                  <NodeJS
+                  <NestJS
                     style={{ width: "45px", height: "45px" }}
                     className="transition-transform duration-200 hover:scale-125"
                   />
-                  <div>Node.js</div>
+                  <div>NestJS</div>
                 </div>
                 <div className="flex w-24 flex-col items-center gap-2">
                   <Express
@@ -235,6 +228,13 @@ function SkillSection() {
                     className="transition-transform duration-200 hover:scale-125"
                   />
                   <div>Golang</div>
+                </div>
+                <div className="flex w-24 flex-col items-center gap-2">
+                  <GraphQL
+                    style={{ width: "45px", height: "45px" }}
+                    className="transition-transform duration-200 hover:scale-125"
+                  />
+                  <div>GraphQL</div>
                 </div>
               </div>
               <div className="absolute left-0 top-5 h-3/4 border-l border-slate-400 dark:border-slate-600" />

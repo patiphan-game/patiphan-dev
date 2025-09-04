@@ -200,16 +200,16 @@ function AboutSection() {
               </span>{" "}
               Seeking for exciting work.
             </p>
-            <a
+            {/* <a
               href="/Patiphan Arphorn - Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-            >
-              <Button className="w-full font-semibold shadow-lg transition duration-200 hover:scale-105 dark:shadow-xl dark:shadow-slate-800 lg:w-1/4">
-                {" "}
-                Resume{" "}
-              </Button>
-            </a>
+            > */}
+            <Button className="w-full font-semibold shadow-lg transition duration-200 hover:scale-105 dark:shadow-xl dark:shadow-slate-800 lg:w-1/4">
+              {" "}
+              Resume{" "}
+            </Button>
+            {/* </a> */}
           </div>
         </div>
       </div>
